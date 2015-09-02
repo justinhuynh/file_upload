@@ -1,0 +1,52 @@
+            Almost all the JS that we'll be writing will reside at the bottom of the body.
+If you need JS to render something, you'll put it in the head.
+
+In most cases, we'll need to modify things on the page, so the page needs to load first.
+
+console.log as puts in ruby
+
+*****Variables:
+* Use var keyword to define scope
+* Only use 'var' when initializing the variable
+
+Note that JavaScript will convert to string - where in Ruby you'd have to explicitly convert .to_s
+
+Semicolon: end of every line
+
+In Ruby, you don't really use the 'for' loops, but in other languages you typically do.
+
+*****Loops
+In a for loop, you usually want to initialize the counter inside the loop
+
+for (var i = 0; i < numbers.length;  i++) {
+
+three things inside the parentheses
+var i = 0; ----- define the counter variable at 0, scoped within the loop only
+i < numbers.length; ----- for how long do you want to run this loop?
+i++ ----- what do you want to do at the end of each loop?
+
+*****Associative Arrays
+Like Hashes in ruby
+But in JS, think of these as little Ruby objects
+
+It looks like a Hash, but they're sort of like objects.
+var person = { first_name: "Barry", last_name: "Zuckerkorn" };
+
+Because you can call person.first_name -> instead of using a key, you just call it as a method of the person object.
+Think about it as an instance variable that has a setter/getter method.
+
+*****Debugger
+0. Put 'debugger' where you might put binding.pry
+1. Call the <script> from HTML file
+2. Open up the calling HTML file (cmd> open index.html)
+3. Open Chrome Developer Tools (Cmd+Opt+I)
+4. 'debugger' will break the code running and open up your code
+5. You can change code - then press 'Esc' to bring up Console!!!
+
+*****Differences between ERB and JS
+ERB - server side, the client never sees it
+JS - client side, Chrome has a JS interpreter
+Slick user side interactivity, that's JS
+Data server side routing and changes, that's Ruby
+
+In between is AJAX - allows JavaScript to interact with Ruby/from a specific database.
